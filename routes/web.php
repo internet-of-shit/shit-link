@@ -15,3 +15,7 @@
   Index
 */
 $router->get('/', 'ShittyController@handleRoot');
+/*
+  Handle Short-Urls
+*/
+$router->get('/{shorturl}', 'ShittyController@handleUrlSolve');

@@ -1,0 +1,2 @@
+shortlink,http://full-url.com
+another-shortlink,http://full-url.com
