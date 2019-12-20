@@ -20,7 +20,11 @@ class ShittyController extends Controller
       Handle Root
     */
     public function handleRoot(Request $request){
-      return response()->json(['status'=>200,'message'=>'shitlink service here 💩']);
+      // if we want to redirect root?!
+      if(!empty(env('REDIRECT_ROOT'))){
+        return redirect()->to(env('REDIRECT_ROOT'));
+      }
+      return view('home', []);
     }
 
 }
